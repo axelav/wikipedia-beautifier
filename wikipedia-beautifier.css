@@ -34,7 +34,7 @@
     border: none;
     font-size: 36px;
     font-weight: bold;
-    line-height: 36px;
+    line-height: 30px;
 }
 
 
@@ -49,6 +49,11 @@
     margin-right: auto;
     margin-top: 1em;
     background: #fbfbfb;
+}
+
+#bodyContent p {
+    line-height: 36px;
+    margin: 0;
 }
 
 .infobox,
