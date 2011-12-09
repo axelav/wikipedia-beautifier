@@ -7,7 +7,7 @@
 					"matches": [ "http://*.wikipedia.org/wiki/*", "https://secure.wikimedia.org/wikipedia/*/wiki/*" ],
 					"css": [ "wikipedia-beautifier.css" ],
 					"js": [ "hyphenator.js", "wikipedia-beautifier.js" ],
-					"run_at": "document_end"
+					"run_at": "document_idle"
 			}
 	],
 	"icons": { 
@@ -15,4 +15,5 @@
 		"48": "icon48.png",
 		"128": "icon128.png"
 	},
+	"homepage_url": "http://github.com/axelav/wikipedia-beautifier" 
 }
