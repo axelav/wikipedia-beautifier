@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 Scott Wheeler <wheeler@kde.org>
+ *  Copyright (C) 2011 Axel Anderson <axelav@gmail.com>
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -16,7 +16,8 @@
  */
 
 body {
-    background:#fff;
+	background:#fff;
+	font-family:Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
 }
 
 h1,
@@ -25,77 +26,147 @@ h3,
 h4,
 h5,
 h6 {
-    font-size:20px;
+	font-size:20px;
+}
+
+a {
+	color:#9C0001;
+}
+
+a:visited {
+	color:#9C0001;
+}
+
+pre {
+	overflow: auto;
 }
 
 #mw-head-base,
 #mw-page-base {
-    background:transparent;
-    border:none;
+	background:transparent;
+	border:none;
 }
 
 #mw-head,
 #mw-panel {
-    opacity: 0;
-    -webkit-transition: all 400ms ease-in-out;
+	opacity: 0;
+	-webkit-transition: all 500ms ease-in-out;
 }
 
-#mw-head:hover, #mw-panel:hover {
-    opacity: 1;
+#mw-head:hover,
+#mw-panel:hover {
+	opacity: 1;
+}
+
+#mw-head #p-personal li {
+	font-size:14px;
+}
+
+div.vectorTabs,
+div.vectorTabs ul,
+div.vectorTabs ul li,
+div.vectorTabs li.selected,
+div.vectorTabs span {
+	background:transparent;
+}
+
+div.vectorTabs li a {
+	color:#9C0001;
+	font-size:14px;
+}
+
+div.vectorTabs li.selected a, div.vectorTabs li.selected a:visited {
+	color:#aaa;
+}
+
+div#mw-panel div.portal div.body ul li {
+	font-size:14px;
+}
+
+div#mw-panel div.portal h5 {
+	font-size:14px;
+}
+
+#mw-panel.collapsible-nav div.portal h5 {
+	color:#444;
+	font-size:14px;
+	padding:4px 0 3px 20px;
+}
+
+#mw-panel.collapsible-nav div.collapsed h5 {
+	color:#444;
+}
+
+div#mw-panel div.portal div.body {
+	margin-left:20px;
+}
+
+div#mw-panel div.portal div.body ul li a,
+div#mw-panel div.portal div.body ul li a:visited {
+	color:#aaa;
 }
 
 div#content {
-    color:#444;
-    margin:0 auto;
+	color:#444;
+	font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+	margin:0 auto;
 }
 
 #firstHeading {
-    font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
-    font-size:20px;
-    font-weight:bold;
-    line-height:30px;
-    border:none;
-    width:600px;
-    margin:0 auto;
-    padding:0;    
+	font-size:20px;
+	font-weight:bold;
+	line-height:30px;
+	border:none;
+	width:600px;
+	margin:0 auto;
+	padding:0;    
 }
 
 
 div#bodyContent {
-    font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
-    font-size: 20px;
-    line-height: 36px;
-    background:transparent;
-    border: 1px solid #eee;
-    width: 600px;
-    margin:1em auto;
-    padding: 50px;
-    
+	font-size: 20px;
+	line-height: 36px;
+	background:transparent;
+	border: 1px solid #eee;
+	width: 600px;
+	margin:1em auto;
+	padding: 50px;
+	
 }
 
 #bodyContent p {
-    line-height: 36px;
-    margin: 0;
+	line-height: 36px;
+	margin: 0;
+}
+
+div#content a.external,
+div#content a.external:visited,
+.articleFeedback-switch {
+	color:#9C0001;
 }
 
 .infobox,
-.tright, .tleft, div.tright, div.tleft,
-.taxobox, table.taxobox,
-.wikitable {
-    margin: 0 0 0.5em;
+.wikitable,
+div.tright, 
+div.tleft, 
+table.taxobox {
+	margin: 0 0 0.5em;
 }
 
-.ambox, table.ambox {
-    margin: 1.5em 10%;
+table.ambox {
+	margin: 1.5em 10%;
 }
 
-pre {
-    overflow: auto;
+div#footer {
+	background:transparent;
+	width:600px;
+	margin:0 auto;
+	padding:10px 10px 200px;
 }
 
-/* HIDDEN ITEMS */
+/* -- HIDDEN -- */
 #siteSub,
 #contentSub,
 #contentSub2 {
-    display:none;
+	display:none;
 }
