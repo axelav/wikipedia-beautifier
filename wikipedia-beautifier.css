@@ -164,6 +164,10 @@ div#footer {
 	padding:10px 10px 200px;
 }
 
+div#footer ul li {
+	font-size:14px;
+}
+
 /* -- HIDDEN -- */
 #siteSub,
 #contentSub,
