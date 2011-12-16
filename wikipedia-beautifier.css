@@ -134,6 +134,12 @@ div#bodyContent {
 	
 }
 
+.infobox {
+	width:600px !important;
+	margin:0 0 10px;
+	float:none;
+}
+
 #bodyContent p {
 	line-height: 36px;
 	margin: 0;
