@@ -21,20 +21,30 @@ body {
 }
 
 h1,
-h2,
+h2 {
+	font-size:24px;
+	font-weight:bold;
+}
+
 h3,
 h4,
 h5,
 h6 {
 	font-size:20px;
+	font-weight:bold;
 }
 
 a {
+	color:#222;
+	text-decoration:underline;
+}
+
+a:hover {
 	color:#9C0001;
 }
 
 a:visited {
-	color:#9C0001;
+	color:#222;
 }
 
 pre {
@@ -88,13 +98,13 @@ div#mw-panel div.portal h5 {
 }
 
 #mw-panel.collapsible-nav div.portal h5 {
-	color:#444;
+	color:#222;
 	font-size:14px;
 	padding:4px 0 3px 20px;
 }
 
 #mw-panel.collapsible-nav div.collapsed h5 {
-	color:#444;
+	color:#222;
 }
 
 div#mw-panel div.portal div.body {
@@ -107,7 +117,7 @@ div#mw-panel div.portal div.body ul li a:visited {
 }
 
 div#content {
-	color:#444;
+	color:#222;
 	font-family: "Hoefler Text", Constantia, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
 	margin:0 auto;
 }
@@ -117,32 +127,39 @@ div#content {
 	font-weight:bold;
 	line-height:30px;
 	border:none;
-	width:600px;
+	max-width:800px;
+	width:80%;
 	margin:0 auto;
-	padding:0;    
+	padding:0;
 }
 
 
 div#bodyContent {
-	font-size: 20px;
-	line-height: 36px;
+	font-size:20px;
+	line-height:36px;
 	background:transparent;
-	border: 1px solid #eee;
-	width: 600px;
+	border:1px solid #eee;
+	max-width:800px;
+	width:80%;
 	margin:1em auto;
-	padding: 50px;
-	
+	padding:50px;
+
 }
 
 .infobox {
-	width:600px !important;
+	width:100% !important;
+	max-width:800px;
 	margin:0 0 10px;
 	float:none;
 }
 
 #bodyContent p {
 	line-height: 36px;
-	margin: 0;
+}
+
+#bodyContent p + p {
+	text-indent:40px;
+	margin: 10px 0;
 }
 
 div#content a.external,
@@ -153,8 +170,8 @@ div#content a.external:visited,
 
 .infobox,
 .wikitable,
-div.tright, 
-div.tleft, 
+div.tright,
+div.tleft,
 table.taxobox {
 	margin: 0 0 0.5em;
 }
@@ -165,7 +182,8 @@ table.ambox {
 
 div#footer {
 	background:transparent;
-	width:600px;
+	max-width:800px;
+	width:80%;
 	margin:0 auto;
 	padding:10px 10px 200px;
 }
@@ -174,9 +192,16 @@ div#footer ul li {
 	font-size:14px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+	#mw-panel {
+		display:none;
+	}
+}
+
 /* -- HIDDEN -- */
 #siteSub,
 #contentSub,
-#contentSub2 {
+#contentSub2,
+#siteNotice {
 	display:none;
 }

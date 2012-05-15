@@ -4,16 +4,16 @@
 	"description": "Beautifies Wikipedia text and layout to make articles more readable",
 	"content_scripts": [
 			{
-					"matches": [ "http://*.wikipedia.org/wiki/*", "https://secure.wikimedia.org/wikipedia/*/wiki/*" ],
+					"matches": [ "http://*.wikipedia.org/wiki/*", "https://*.wikipedia.org/wiki/*", "https://secure.wikimedia.org/wikipedia/*/wiki/*" ],
 					"css": [ "wikipedia-beautifier.css" ],
 					"js": [ "hyphenator.js", "wikipedia-beautifier.js" ],
 					"run_at": "document_end"
 			}
 	],
-	"icons": { 
+	"icons": {
 		"16": "icon16.png",
 		"48": "icon48.png",
 		"128": "icon128.png"
 	},
-	"homepage_url": "http://github.com/axelav/wikipedia-beautifier" 
+	"homepage_url": "http://github.com/axelav/wikipedia-beautifier"
 }
